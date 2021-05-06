@@ -5,15 +5,15 @@ import java.time.LocalDate;
 import com.devsuperior.dsvendas.entities.Sale;
 
 public class SaleDTO {
-	
+
 	private Long id;
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
-	
+
 	private SellerDTO seller;
-	
+
 	public SaleDTO() {
 	}
 
@@ -25,7 +25,7 @@ public class SaleDTO {
 		this.date = date;
 		this.seller = seller;
 	}
-	
+
 	public SaleDTO(Sale entity) {
 		id = entity.getId();
 		visited = entity.getVisited();
